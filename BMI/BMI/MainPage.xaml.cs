@@ -21,9 +21,14 @@ namespace BMI
             double dHeight = double.Parse(height.Text);
             double dWeight = 50.0;
 
+            if(dHeight > 3)
+            {
+                dHeight /= 100;
+            }
+
             double dBMI = dWeight / dHeight / dHeight;
 
-            DisplayAlert("BMI", dHeight+"太りすぎ", "OK");
+            DisplayAlert("BMI", dBMI+"太りすぎ", "OK");
         }
     }
 }
