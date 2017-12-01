@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="JK3A03"
+            <Label Text="JK3A03　"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
