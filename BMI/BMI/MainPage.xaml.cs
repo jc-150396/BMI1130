@@ -28,7 +28,33 @@ namespace BMI
 
             double dBMI = dWeight / dHeight / dHeight;
 
-            DisplayAlert("BMI", dBMI+"太りすぎ", "OK");
+            if (dBMI < 18.5)
+            {
+                DisplayAlert("BMI", dBMI + "：低体重", "OK");
+            }
+            else if (dBMI < 25.0)
+            {
+                DisplayAlert("BMI", dBMI + "：普通体重", "OK");
+            }
+            else if (dBMI < 30.0)
+            {
+                DisplayAlert("BMI", dBMI + "：肥満（1度）", "OK");
+            }
+            else if (dBMI < 35.0)
+            {
+                DisplayAlert("BMI", dBMI + "：肥満（2度）", "OK");
+            }
+            else if (dBMI < 40.0)
+            {
+                DisplayAlert("BMI", dBMI + "：肥満（3度）", "OK");
+            }
+            else
+            {
+                DisplayAlert("BMI", dBMI + "：肥満（4度）", "OK");
+            }
+
+
+
         }
     }
 }
