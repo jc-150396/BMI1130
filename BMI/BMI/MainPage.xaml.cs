@@ -19,7 +19,7 @@ namespace BMI
         {
 
             double dHeight = double.Parse(height.Text);
-            double dWeight = 50.0;
+            double dWeight = double.Parse(weight.Text);
 
             if(dHeight > 3)
             {
